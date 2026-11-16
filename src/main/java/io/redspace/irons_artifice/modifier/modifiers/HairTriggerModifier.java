@@ -10,7 +10,7 @@ public final class HairTriggerModifier extends ValueStackModifier {
     public HairTriggerModifier() {
         super(Map.of(
                 ShotComponents.FIRE_RATE, new ValueModifier(0.5, ValueModifier.Operation.MULTIPLY_TOTAL),
-                ShotComponents.MAG_SIZE, new ValueModifier(5, ValueModifier.Operation.ADD_TOTAL)
+                ShotComponents.MAG_SIZE, new ValueModifier(5, ValueModifier.Operation.ADD)
         ));
     }
 }
