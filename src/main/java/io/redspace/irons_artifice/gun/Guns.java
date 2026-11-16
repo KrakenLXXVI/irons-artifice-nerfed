@@ -20,7 +20,7 @@ import net.minecraft.sounds.SoundEvents;
 public final class Guns {
 
     public static final GunProfile FLINTLOCK_PISTOL = GunProfile.builder(1, 5, 40, FireMode.SEMI, ArmPoseKind.PISTOL,
-                    ShotComponentTemplate.builder(20, 3, 0.5, 1, RecoilProfile.of(35f, .45f, 1.7f, 0))
+                    ShotComponentTemplate.builder(9, 3, 0.5, 1, RecoilProfile.of(35f, .45f, 1.7f, 0))
                             .bulletSpeedMultiplier(0.75)
                             .gunshotSound(
                                     GunShotSoundSettings.standardShot(IronsArtificeSounds.FLINTLOCK_SHOOT, 1f),
@@ -41,7 +41,7 @@ public final class Guns {
             .build();
 
     public static final GunProfile MUSKET = GunProfile.builder(1, 5, 60, FireMode.SEMI, ArmPoseKind.RIFLE,
-                    ShotComponentTemplate.builder(18, 0.5, 0, 1, RecoilProfile.of(30f, .45f, 1.9f, 111))
+                    ShotComponentTemplate.builder(10, 0.5, 0, 1, RecoilProfile.of(30f, .45f, 1.9f, 111))
                             .bulletSpeedMultiplier(1.5)
                             .gunshotSound(
                                     GunShotSoundSettings.standardShot(IronsArtificeSounds.MUSKET_SHOOT, 1f),
@@ -61,7 +61,7 @@ public final class Guns {
             .build();
 
     public static final GunProfile BLACKPOWDER_REVOLVER = GunProfile.builder(6, 5, 40, FireMode.SEMI, ArmPoseKind.PISTOL,
-                    ShotComponentTemplate.builder(10, 1, 0.125, 10, RecoilProfile.of(25f, .33f, 1.7f, 0))
+                    ShotComponentTemplate.builder(8, 1, 0.125, 10, RecoilProfile.of(25f, .33f, 1.7f, 0))
                             .gunshotSound(
                                     GunShotSoundSettings.standardShot(IronsArtificeSounds.BLACKPOWDER_REVOLVER_SHOOT, 1f),
                                     GunShotSoundSettings.standardEcho(IronsArtificeSounds.BULLET_ECHO_GENERIC_PISTOL, 0.9f),
@@ -81,7 +81,7 @@ public final class Guns {
             .build();
 
     public static final GunProfile SIX_SHOOTER = GunProfile.builder(6, 5, 20, FireMode.SEMI, ArmPoseKind.PISTOL,
-                    ShotComponentTemplate.builder(8, 2.5, 0, 3, RecoilProfile.of(15f, .5f, 2.7f, 465))
+                    ShotComponentTemplate.builder(6, 2.5, 0, 3, RecoilProfile.of(15f, .5f, 2.7f, 465))
                             .gunshotSound(
                                     GunShotSoundSettings.standardShot(IronsArtificeSounds.SIX_SHOOTER_SHOOT, 1f),
                                     GunShotSoundSettings.standardEcho(IronsArtificeSounds.BULLET_ECHO_GENERIC_PISTOL, 1.1f),
@@ -96,7 +96,7 @@ public final class Guns {
             .build();
 
     public static final GunProfile BLUNDERBUSS = GunProfile.builder(2, 5, 30, FireMode.SEMI, ArmPoseKind.RIFLE,
-                    ShotComponentTemplate.builder(22, 7, 0.75, 1, RecoilProfile.of(30f, .35f, 2f, 999))
+                    ShotComponentTemplate.builder(12, 7, 0.75, 1, RecoilProfile.of(30f, .35f, 2f, 999))
                             .projectileCount(8)
                             .gunshotSound(
                                     GunShotSoundSettings.standardShot(IronsArtificeSounds.BLUNDERBUSS_SHOOT, 1f),
@@ -115,7 +115,7 @@ public final class Guns {
             .build();
 
     public static final GunProfile ARQUEBUS = GunProfile.builder(4, 7, 50, FireMode.SEMI, ArmPoseKind.RIFLE,
-                    ShotComponentTemplate.builder(12, 1, 0, 20, RecoilProfile.of(30f, .45f, -1.9f, 222))
+                    ShotComponentTemplate.builder(8, 1, 0, 20, RecoilProfile.of(30f, .45f, -1.9f, 222))
                             .gunshotSound(
                                     GunShotSoundSettings.standardShot(IronsArtificeSounds.ARQUEBUS_SHOOT, 1f),
                                     GunShotSoundSettings.standardEcho(IronsArtificeSounds.BULLET_ECHO_GENERIC, 1.5f),
@@ -141,7 +141,7 @@ public final class Guns {
             .build();
 
     public static final GunProfile CLOCKWORK_RIFLE = GunProfile.builder(10, 6, 30, FireMode.AUTO, ArmPoseKind.RIFLE,
-                    ShotComponentTemplate.builder(7, 2, 0.05, 4, RecoilProfile.of(7.5f, .35f, 0.6f, 6969))
+                    ShotComponentTemplate.builder(4.5, 2, 0.05, 4, RecoilProfile.of(7.5f, .35f, 0.6f, 6969))
                             .gunshotSound(
                                     GunShotSoundSettings.standardShot(IronsArtificeSounds.CLOCKWORK_RIFLE_SHOOT, 1f),
                                     GunShotSoundSettings.standardEcho(IronsArtificeSounds.BULLET_ECHO_GENERIC, 1f),
