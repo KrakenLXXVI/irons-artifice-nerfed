@@ -25,6 +25,7 @@ public final class ShotComponents {
 
     // Attributes
     public static final ComponentType<Value> DAMAGE = new ComponentType<>(IronsArtifice.id("damage"), () -> Value.of(0), Sentiment.POSITIVE);
+    public static final ComponentType<Value> MAG_SIZE = new ComponentType<>(IronsArtifice.id("magazine_size"), () -> Value.of(0), Sentiment.POSITIVE);
     public static final ComponentType<Value> BULLET_SPEED = new ComponentType<>(IronsArtifice.id("bullet_speed"), () -> Value.of(Bullet.BASE_SPEED), Sentiment.POSITIVE);
     public static final ComponentType<Value> GRAVITY = new ComponentType<>(IronsArtifice.id("gravity"), () -> Value.of(0.05), Sentiment.NEGATIVE);
     public static final ComponentType<Value> KNOCKBACK = new ComponentType<>(IronsArtifice.id("knockback"), () -> Value.of(0), Sentiment.POSITIVE);
