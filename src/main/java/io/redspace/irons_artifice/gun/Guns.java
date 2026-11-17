@@ -154,4 +154,20 @@ public final class Guns {
             .equipSound(PlayableSound.of(IronsArtificeSounds.CLOCKWORK_RIFLE_EQUIP, 0.75f, 0.9f, 1.1f))
             .animationAdjusters(AnimationAdjuster.HARMONICA_MAGAZINE)
             .build();
+
+    public static final GunProfile VERY_CLOCKWORK_RIFLE = GunProfile.builder(35, 10, 30, FireMode.AUTO, ArmPoseKind.RIFLE,
+                    ShotComponentTemplate.builder(7, 1, 0.05, 2, RecoilProfile.of(7.5f, .35f, 0.6f, 6969))
+                            .gunshotSound(
+                                    GunShotSoundSettings.standardShot(IronsArtificeSounds.CLOCKWORK_RIFLE_SHOOT, 1f),
+                                    GunShotSoundSettings.standardEcho(IronsArtificeSounds.BULLET_ECHO_GENERIC, 1f),
+                                    PlayableSound.holder(SoundEvents.DISPENSER_FAIL))
+                            .build())
+            .reloadCues(ReloadCueStack.of(
+                    new ReloadCue(0.38f, PlayableSound.of(IronsArtificeSounds.CLOCKWORK_RIFLE_EJECT_MAG, 1.25f, 0.9f, 1.1f)),
+                    new ReloadCue(1.04f, PlayableSound.of(IronsArtificeSounds.CLOCKWORK_RIFLE_INSERT_MAG, 1.25f, 0.9f, 1.1f))
+            ))
+            .equipSound(PlayableSound.of(IronsArtificeSounds.CLOCKWORK_RIFLE_EQUIP, 0.75f, 0.9f, 1.1f))
+            .animationAdjusters(AnimationAdjuster.HARMONICA_MAGAZINE)
+            .build();
+}
 }
